@@ -6,6 +6,11 @@ A machine learning system that predicts whether an e-commerce visitor is likely 
 
 ---
 
+## Result
+<img width="1920" height="922" alt="image" src="https://github.com/user-attachments/assets/0e8fa3f3-c1d0-4f31-9a17-0d0da24f6a68" />
+
+---
+
 ## What it does
 
 Most e-commerce stores treat every visitor the same. This tool segments them by purchase intent so you can run the right campaign on the right person:

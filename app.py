@@ -78,11 +78,12 @@ def preprocess(df, scaler, encoder, label_encoders):
     existing_drop = [c for c in DROP_COLS if c in X.columns]
     X.drop(existing_drop, axis=1, inplace=True)
 
-    # Drop Revenue if present (target column)
-    if 'Revenue' in X.columns:
-        X.drop('Revenue', axis=1, inplace=True)
+    # Drop Revenue and index if present
+    for col in ['Revenue', 'index']:
+        if col in X.columns:
+            X.drop(col, axis=1, inplace=True)
 
-    # Reset index to avoid join issues
+    # Reset index
     X.reset_index(drop=True, inplace=True)
 
     # Label encode
