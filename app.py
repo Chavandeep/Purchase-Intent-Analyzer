@@ -102,6 +102,9 @@ def preprocess(df, scaler, encoder, label_encoders):
         X.drop(existing_cat, axis=1, inplace=True)
         X = X.join(cat_df)
 
+    # Fix column names (one-hot encoded columns come in as integers)
+    X.columns = X.columns.astype(str)
+
     # Scale
     X_scaled = scaler.transform(X)
     return X_scaled
