@@ -241,6 +241,7 @@ if uploaded:
         with col_b:
             st.markdown('<p class="section-title">Intent score distribution</p>', unsafe_allow_html=True)
             hist_df = pd.cut(results['intent_score'], bins=10).value_counts().sort_index()
+            hist_df.index = hist_df.index.astype(str)
             st.bar_chart(hist_df)
 
         # ── Accuracy (if Revenue column present) ─────────────────────────────

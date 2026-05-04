@@ -25,8 +25,8 @@ X = dataset.iloc[:, :-1].copy()
 y = dataset.iloc[:, -1].copy()
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
-X_train.reset_index(inplace=True)
-X_test.reset_index(inplace=True)
+X_train.reset_index(drop=True, inplace=True)
+X_test.reset_index(drop=True,inplace=True)
 
 # Drop redundant columns
 drop_cols = ['Administrative', 'Informational', 'ProductRelated', 'OperatingSystems', 'Region', 'TrafficType']
