@@ -7,7 +7,7 @@ A machine learning system that predicts whether an e-commerce visitor is likely 
 ---
 
 ## Result
-<img width="1920" height="922" alt="image" src="https://github.com/user-attachments/assets/0e8fa3f3-c1d0-4f31-9a17-0d0da24f6a68" />
+<img width="1920" height="2466" alt="image" src="https://github.com/user-attachments/assets/9e28aa87-4785-4f82-9739-215762afd87f" />
 
 ---
 
